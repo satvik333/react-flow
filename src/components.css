@@ -1,0 +1,25 @@
+/* Custom Component styles*/
+
+.kap-select {
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+* .ps__thumb-y {
+    right: 0 !important;
+    width: 4px;
+    background-color: #2196f3 !important;
+    border-radius: 0;
+}
+
+.accordian-root:before {
+    background-color: transparent;
+}
+
+.accordian-root .MuiAccordionSummary-root {
+    padding: 0;
+}
+
+.accordian-root .MuiAccordionSummary-content {
+    margin: 5px 0;
+}

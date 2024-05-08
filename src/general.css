@@ -1,0 +1,256 @@
+@import './components.css';
+.v-splitter {
+    border-right: 1px solid #9E9E9E;
+}
+
+.f-bend {
+    transform: skew(-20deg);
+}
+
+.b-bend {
+    transform: skew(-20deg);
+}
+
+.bg-transparentBlack {
+    background-color: rgb(0 0 0 / 44%);
+}
+
+.bg-transparentWhite {
+    background-color: rgb(193 189 189 / 30%);
+}
+
+.text-wrap-breakword {
+    overflow-wrap: break-word;
+}
+
+.displayNone {
+    display: none
+}
+
+.z-1 {
+    z-index: 1;
+}
+
+.wd-30 {
+    width: 30%;
+}
+
+.wd-33 {
+    width: 33.33%;
+}
+
+.wd-40 {
+    width: 40%;
+}
+
+.wd-50 {
+    width: 50%;
+}
+
+.wd-60 {
+    width: 60%;
+}
+
+.wd-70 {
+    width: 70%;
+}
+
+.wd-66 {
+    width: 66.67%;
+}
+
+.max-w-700 {
+    max-width: 650px;
+}
+.max-w-75{
+    max-width: 75px;
+}
+
+.sm-avatar {
+    width: 10px;
+    height: 10px
+}
+
+.md-avatar {
+    width: 30px;
+    height: 30px
+}
+
+.sm-patch {
+    text-shadow: 0px 0px 20px #3333338c;
+}
+
+.half-rounded {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.typing-spinner {
+    width: 70px;
+    text-align: center;
+}
+
+.typing-spinner>div {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    display: inline-block;
+}
+
+.typing-spinner .bounce1 {
+    -webkit-animation-delay: -0.25s;
+    animation-delay: -0.25s;
+}
+
+.typing-spinner .bounce2 {
+    -webkit-animation-delay: -0.3s;
+    animation-delay: -0.3s;
+}
+
+.typing-spinner .bounce3 {
+    -webkit-animation-delay: -0.5s;
+    animation-delay: -0.5s;
+}
+
+@keyframes kp-turn {
+    0%,
+    80%,
+    100% {
+        -webkit-transform: rotateZ(360deg);
+        transform: rotateZ(360deg);
+    }
+    40% {
+        transform: rotateZ(0deg);
+    }
+}
+
+.slide-in {
+    animation: slide-in 0.5s forwards;
+    -webkit-animation: slide-in 0.5s forwards;
+}
+
+.slide-out {
+    animation: slide-out 0.5s forwards;
+    -webkit-animation: slide-out 0.5s forwards;
+}
+
+.animate-bounce-high {
+    animation: bounce-high 1s infinite;
+    -webkit-animation: bounce-high 1s infinite;
+    ;
+}
+
+@keyframes slide-in {
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@-webkit-keyframes slide-in {
+    100% {
+        -webkit-transform: translateX(0%);
+    }
+}
+
+@keyframes slide-out {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@-webkit-keyframes slide-out {
+    0% {
+        -webkit-transform: translateX(0%);
+    }
+    100% {
+        -webkit-transform: translateX(-100%);
+    }
+}
+
+@keyframes bounce-high {
+    0%,
+    100% {
+        transform: translateY(-50%);
+        animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+        transform: none;
+        animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+}
+
+@-webkit-keyframes bounce-high {
+    0%,
+    100% {
+        transform: translateY(-50%);
+        animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+        transform: none;
+        animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+}
+
+.kp-loader {
+    width: 70px;
+    background: transparent;
+    text-align: center;
+}
+
+.kp-loader>div {
+    width: 20px;
+    border: 2px solid #673AB7;
+    border-bottom-color: #0971a9;
+    border-top-color: #0971a9;
+    height: 20px;
+    border-radius: 100%;
+    display: inline-block;
+    -webkit-animation: kp-turn 1.4s infinite ease-in-out both;
+    animation: kp-turn 1.4s infinite ease-in-out both;
+}
+
+.image-load {
+    /* background: url('/static/icons/loader.svg') no-repeat; */
+}
+
+.inputapi-popupeditor {
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 10%);
+    z-index: 99999;
+    left: 50%;
+}
+
+.inputapi-popupeditor .inputapi-popupeditor-input {
+    border: 1px solid #BDBDBD;
+    padding: 0.5rem;
+}
+
+.inputapi-popupeditor .inputapi-popupeditor-menuitem {
+    cursor: pointer;
+}
+
+.associateObjectForm input[readonly] {
+    background-color: #e9e3e3;
+}
+
+.associateObjectForm_date input[readonly]{
+    background-color: white;
+}
+.associateObjectForm select[readonly],
+.associateObjectForm .readonly-selector .MuiInputBase-input {
+    background: #fff;
+}
+
+.simplebar-content {
+    height: 100%;
+}
+
+.aling-items-center {
+    align-items: center;
+}

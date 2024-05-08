@@ -1,0 +1,123 @@
+.dndflow {
+    flex-direction: column;
+    display: flex;
+    height: calc(100vh - 64px);
+  }
+  
+ .dark-mode {
+  background-color: black;
+ }
+
+ .light-mode {
+  background-color: white;
+ }
+ 
+ .dark-mode-btn {
+  color: white;
+  background-color: white;
+ }
+  
+  .dndflow aside {
+    border-right: 1px solid #eee;
+    font-size: 20px;
+    background: #fcfcfc;
+    top: 10px;
+    bottom: 10px;
+    right: 10px;
+  }
+  
+  .dndflow aside .flowapp-widget-list {
+    height: calc(100vh - (64px + 64px + 36px + 46px));
+    padding: 5px;
+  }
+  
+  .dndflow-full aside .flowapp-widget-list {
+    height: calc(100vh - (64px + 36px + 46px));
+  }
+  
+  .dndflow aside .flowapp-widget-config {
+    height: calc(100vh - (64px + 48px + 50px));
+  }
+  
+  .dndflow-full aside .flowapp-widget-config {
+    height: calc(100vh - (64px + 48px + 50px));
+  }
+  
+  .dndflow .dndnode {
+    height: 20px;
+    padding: 4px;
+    border: 1px solid #1a192b;
+    border-radius: 2px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: grab;
+  }
+  
+  .dndflow .flowChart-notice {
+    left: 45px;
+    top: 10px;
+  }
+  
+  .dndflow .flowChart-back-btn {
+    top: 10px;
+    left: 15px;
+  }
+  
+  .dndflow .react-flow__handle {
+    height: 13px;
+    width: 13px;
+    bottom: -7px;
+    border: 3px solid #138beb;
+    background: #acd8f9;
+  }
+  
+  .dndflow .dndnode.input {
+    border-color: #0041d0;
+  }
+  
+  .dndflow .dndnode.output {
+    border-color: #ff0072;
+  }
+  
+  .dndflow .reactflow-wrapper {
+    flex-grow: 1;
+    height: 100%;
+  }
+  
+  .dndflow .flowapp-widget-wrapper {
+    border: 2px solid #fff;
+  }
+  
+  .dndflow .flowapp-widget-wrapper.focused {
+    border: 2px solid #138beb;
+  }
+  
+  .dndflow .flowapp-chatTrigger-widget {
+    border-top: 5px solid #F44336;
+  }
+  
+  .dndflow .flowapp-chatTrigger-widget.focused {
+    border: 2px solid #F44336;
+    border-top: 5px solid #F44336;
+  }
+  
+  .dndflow .custom-action-widget {
+    border-color: #ce93d8;
+  }
+  
+  .dndflow .custom-action-widget .react-flow__handle {
+    border-color: #ce93d8;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .dndflow {
+      flex-direction: row;
+    }
+  
+    .dndflow aside {
+      width: 20%;
+      max-width: 250px;
+    }
+  }
